@@ -4,8 +4,7 @@
     --darkest: #111827;
     --gray: #6b7280;
     --light: #eee;
-    --pink: #ec4899;
-    --purple: #8b5cf6;
+    --yellow: #b6a524;
 }
 
 *{
@@ -15,11 +14,13 @@
 }
 
 body {
+    padding: 100px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: var(--dark);
+    background: var(--darker);
     color: white;
+    
 }
 
 header {
@@ -33,7 +34,12 @@ header h1 {
     font-size: 2.5rem;
     font-weight: 300;
     color: var(--gray);
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 #new-task-form {
@@ -49,7 +55,8 @@ input, button {
 
 #new-task-input {
     flex: 1 1 0%;
-    background-color: var(--darker);
+    background: rgb(53,6,122);
+    background: linear-gradient(90deg, rgba(53,6,122,1) 0%, rgba(54,5,122,1) 0%, rgba(20,9,182,1) 0%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%, rgba(5,67,116,1) 100%, rgba(16,59,230,1) 100%);
     padding: 1rem;
     border-radius: 1rem;
     margin-right: 1rem;
@@ -62,8 +69,8 @@ input, button {
 }
 
 #new-task-submit {
-    color: var(--pink);
-    font-size: 1.25rem;
+    color: var(--gray);
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     transition: 0.4s;
@@ -118,7 +125,7 @@ main {
 }
 
 #tasks .task .content .text:not(:read-only) {
-    color: var(--pink);
+    color: var(--gray);
 }
 
 #task .task .actions {
@@ -144,9 +151,17 @@ main {
 }
 
 .task .actions .edit {
-    color: var(--pink);
+    color: var(--yellow);
 }
 
 .task .actions .delete {
     color: crimson;
+}
+
+footer {
+    margin-left: 690px;
+    bottom: 0;
+    position: fixed;
+    color: white;
+    width: 100%;
 }
