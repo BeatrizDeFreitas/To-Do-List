@@ -3,8 +3,8 @@
     --darker: #1F2937;
     --darkest: #111827;
     --gray: #6b7280;
-    --light: #eee;
-    --yellow: #b6a524;
+    --light: #110f03;
+    --yellow: #ebd12d;
 }
 
 *{
@@ -18,7 +18,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: var(--darker);
+    background-image: url(./images/windows-10x-3x.jpg);
+    background-position: center;
+    background-size: cover;
     color: white;
     
 }
@@ -31,9 +33,9 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
-    color: var(--gray);
+    color: var(--dark);
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -55,8 +57,8 @@ input, button {
 
 #new-task-input {
     flex: 1 1 0%;
-    background: rgb(53,6,122);
-    background: linear-gradient(90deg, rgba(53,6,122,1) 0%, rgba(54,5,122,1) 0%, rgba(20,9,182,1) 0%, rgba(2,0,36,1) 65%, rgba(2,0,36,1) 100%, rgba(5,67,116,1) 100%, rgba(16,59,230,1) 100%);
+    background: rgb(64,143,213);
+    background: linear-gradient(90deg, rgba(64,143,213,1) 0%, rgba(216,197,255,1) 100%);
     padding: 1rem;
     border-radius: 1rem;
     margin-right: 1rem;
@@ -65,11 +67,11 @@ input, button {
 }
 
 #new-task-input::placeholder {
-    color: var(--gray);
+    color: var(--dark);
 }
 
 #new-task-submit {
-    color: var(--gray);
+    color: var(--darker);
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
@@ -97,16 +99,17 @@ main {
 }
 
 .task-list h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 200;
-    color: var(--gray);
+    color: var(--darkest);
     margin-bottom: 1rem;
 }
 
 #tasks .task {
     display: flex;
     justify-content: space-between;
-    background-color: var(--darkest);
+    background: rgb(194,168,247);
+    background: linear-gradient(90deg, rgba(194,168,247,1) 0%, rgba(19,38,203,1) 100%);
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -125,7 +128,7 @@ main {
 }
 
 #tasks .task .content .text:not(:read-only) {
-    color: var(--gray);
+    color: var(--dark);
 }
 
 #task .task .actions {
