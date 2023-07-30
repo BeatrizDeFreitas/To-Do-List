@@ -164,7 +164,6 @@ main {
 footer {
     margin-left: 690px;
     bottom: 0;
-    position: fixed;
     color: white;
     width: 100%;
 }
